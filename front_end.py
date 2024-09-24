@@ -7,7 +7,8 @@ def printMeny():
     print("| 2. Trekk fra   (minus)                         |")
     print("| 3. Gange       (***TODO***)                    |")
     print("| 4. Dele        (***TODO***)                    |")
-    print("| 5. Avslutt                                     |")
+    print("| 5. History                                     |")
+    print("| 6. Avslutt                                     |")
     print("--------------------------------------------------")
     menyvalg = input("Velg operasjon fra menyen: ")
     utfoerMenyvalg(menyvalg)
@@ -25,6 +26,8 @@ def utfoerMenyvalg(valgtTall):
     elif valgtTall == "4":
         unfinished()
     elif valgtTall == "5":
+        visHistorikk()
+    elif valgtTall == "6":
         bekreftelse = input("Er du sikker på at du vil avslutte? J/N ")
         if (bekreftelse == "J" or bekreftelse == "j"):
             exit()
