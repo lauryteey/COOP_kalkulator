@@ -14,7 +14,7 @@ def leggSammen():
         
 def trekkFra():
     try:
-        tall1 = int(input("Skriv inn det andre tallet: "))
+        tall1 = int(input("Skriv inn det første tallet: "))
         tall2 = int(input("Skriv inn det andre tallet: "))
         diff = int(tall1) - int(tall2)
         print(f'{tall1} - {tall2} = {diff}')
@@ -52,13 +52,14 @@ def deling():
         print("Vennligst skriv inn gyldige tall. ")
         return
     
-def visHistorikk():
+def show_record():
     if history:
-        print("Beregninger så langt:")
-        for entry in history:
-            print(entry)
+        print("Operasjoner så langt:")
+        for record in history:
+            print(record)
     else:
         print("Ingen beregninger er lagret ennå.")
+        
     
 
 
