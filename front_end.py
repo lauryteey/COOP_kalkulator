@@ -26,7 +26,8 @@ def utfoerMenyvalg(valgtTall):
     elif valgtTall == "4":
         unfinished()
     elif valgtTall == "5":
-        visHistorikk()
+        show_record()
+        pause_og_fortsett()
     elif valgtTall == "6":
         bekreftelse = input("Er du sikker på at du vil avslutte? J/N ")
         if (bekreftelse == "J" or bekreftelse == "j"):
@@ -35,7 +36,7 @@ def utfoerMenyvalg(valgtTall):
             printMeny()
     else:
         nyttForsoek = input("*** Ugyldig valg."
-                            "Velg et tall mellom 1-4."
+                            "Velg et tall mellom 1-6."
                             " Trykk for å fortsette *** ")
         printMeny()
 
